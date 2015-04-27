@@ -1,0 +1,17 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "vendor/bootstrap";
+@import "vendor/font-awesome/font-awesome";
+
+html {
+	font-family: 'Helvetica Neue', arial, helvetica, sans-serif;
+	font-size: 16px;
+}
+
+div.logoHeader {
+	margin: 20px 0;
+}

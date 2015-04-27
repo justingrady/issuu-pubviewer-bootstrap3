@@ -1,0 +1,38 @@
+/* line 1, ../../../sass/pubs/main.scss */
+body {
+  text-rendering: optimizeLegibility; }
+
+/* line 5, ../../../sass/pubs/main.scss */
+.headtitle {
+  color: #666666;
+  font-size: 1.7em;
+  border-left: 1px dotted #cccccc;
+  padding: 0 0 0 2em; }
+
+/* line 15, ../../../sass/pubs/main.scss */
+.thumbnail {
+  margin: 20px; }
+
+/* line 19, ../../../sass/pubs/main.scss */
+.issuutablet {
+  margin: 1em 0; }
+  /* line 22, ../../../sass/pubs/main.scss */
+  .issuutablet p {
+    font-size: 1.2em; }
+
+/* line 27, ../../../sass/pubs/main.scss */
+footer {
+  padding: 0.5em 0 1em 0;
+  margin: 0; }
+
+/* line 3, ../../../sass/pubs/uniondemocrat.scss */
+.headtitle {
+  margin: 4px 0 0 0; }
+
+/* line 7, ../../../sass/pubs/uniondemocrat.scss */
+footer {
+  background-color: #B5D7F0;
+  color: #000000; }
+  /* line 11, ../../../sass/pubs/uniondemocrat.scss */
+  footer p {
+    color: #445057; }

@@ -1,0 +1,16 @@
+# Hide the application and system directories by redirecting the request to index.php
+# Added deploy.php to be excepted from rewrite rules so deploy.php will work as webhook
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|fonts|css|js|robots\.txt|deploy\.php)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
+RewriteRule ^(application|system|\.svn) index.php/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# AddType application/atom+xml atom
+AddType 'application/atom+xml; charset=UTF-8' atom
+AddType 'application/json; charset=UTF-8' json
+AddType 'text/css; charset=UTF-8' css
+Header set Access-Control-Allow-Origin *
+# Header set X-Robots-Tag "noindex, nofollow"
